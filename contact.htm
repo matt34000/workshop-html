@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	
+  <title>Contact - Pizzeria La Florentina</title>
+</head>
+<body>
+
+<h1>La Florentina </h1>
+<h2>Pizzeria</h2>
+<ul>
+  <li><a href="index.htm">Accueil</a></li>
+  <li><a href="liste_pizzas.htm">Nos pizzas</a></li>
+  <li><strong>Contact</strong></li>
+</ul>
+<br>
+
+
+<form action="/send_contact" id="form1" name="form1" method="post">
+ 
+ <table width="600" border="0" cellspacing="2" cellpadding="2">
+   <tbody>
+     <tr>
+       <td align="right" bgcolor="#DADADA"><strong>
+         <label for="lastname">Prénom :</label>
+        </strong></td>
+       <td bgcolor="#F1F1F1"><input name="firstname" type="text" id="firstname" size="50"></td>
+     </tr>
+     <tr>
+       <td align="right" bgcolor="#DADADA"><strong>
+         <label for="lastname">Nom :</label>
+       </strong></td>
+       <td bgcolor="#F1F1F1"><input name="lastname" type="text" id="lastname" size="50"></td>
+     </tr>
+     <tr>
+       <td align="right" bgcolor="#DADADA"><strong>
+         <label for="email">e-mail :</label>
+        </strong></td>
+       <td bgcolor="#F1F1F1"><input name="email" type="email" id="email" size="50"></td>
+     </tr>
+     <tr>
+       <td align="right" bgcolor="#DADADA"><strong>
+         <label for="tel">Téléphone :</label>
+       </strong></td>
+       <td bgcolor="#F1F1F1"><input type="tel" name="tel" id="tel"></td>
+     </tr>
+     <tr>
+       <td align="right" bgcolor="#DADADA"><strong>
+         <label for="channel">Canal de contact préféré :</label>
+       </strong></td>
+       <td bgcolor="#F1F1F1">
+         <select name="channel" id="channel">
+           
+           <option value="email">e-mail</option>
+           <option value="tel">téléphone</option>
+         </select></td>
+     </tr>
+     <tr>
+       <td align="right" valign="top" bgcolor="#DADADA"><strong>
+         <label for="message">Votre message :</label>
+       </strong></td>
+       <td bgcolor="#F1F1F1">
+       <textarea name="message" cols="40" rows="10" id="message"></textarea></td>
+     </tr>
+     <tr>
+       <td>&nbsp;</td>
+       <td align="center" bgcolor="#F1F1F1"><input type="submit" name="submit" id="submit" value="Envoyer"></td>
+     </tr>
+   </tbody>
+ </table>
+
+</form>
+
+</body>
+</html>
